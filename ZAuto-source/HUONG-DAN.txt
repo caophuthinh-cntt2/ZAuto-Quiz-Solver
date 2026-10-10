@@ -1,0 +1,28 @@
+ZAUTO — Android 8 trở lên
+
+1. Cài ZAuto.apk (cho phép cài ứng dụng từ nguồn này nếu Android hỏi).
+2. Mở ZAuto, nhập API key XKIRO. Model mặc định giống tool Python.
+3. Bấm Bật nút nổi, cấp quyền hiển thị trên ứng dụng khác, quay lại app.
+4. Bấm Bật nút nổi lần nữa; đồng ý chụp/chia sẻ TOÀN BỘ màn hình.
+5. Mở câu hỏi. Bấm 🔵 → ⏳ Đang giải... → ✅ ĐÁP ÁN: B.
+6. Kéo nút để di chuyển. Bấm đáp án để giải câu tiếp. Giữ nút hoặc vào app bấm Tắt để dừng.
+
+Nút ẩn trong khoảnh khắc lấy ảnh để không che câu hỏi.
+Ảnh chỉ gửi tới https://api.xkiro.com/v1/chat/completions khi bấm nút.
+Không lưu ảnh hoặc API key vào tệp; cần nhập lại key khi app bị đóng.
+Không đính kèm API key trong APK. API key trong tool gốc có thể dùng ở ô nhập.
+Nếu model không còn hoạt động, nhập model hỗ trợ ảnh đang có trên tài khoản XKIRO.
+Ứng dụng có thể không chụp được nội dung được Android/ứng dụng khác bảo vệ.
+Khóa màn hình hoặc dừng chia sẻ có thể kết thúc phiên: mở app để bật lại.
+
+Đã kiểm tra: biên dịch, đóng gói, manifest, chữ ký APK.
+Chưa kiểm tra trên thiết bị: cấp quyền, nút nổi, xoay màn hình và API thật.
+Đáp án do AI cung cấp có thể sai.
+
+Mã nguồn:
+- src/vn/zauto/MainActivity.java: cấu hình và xin quyền.
+- CaptureService.java: nút nổi, chụp ảnh, vòng đời phiên.
+- Solver.java: gọi API tương thích Chat Completions.
+- build.ps1: build bằng JDK 21, Android SDK platform 36 / build-tools 35.
+- check.ps1: kiểm tra gói APK.
+Build dùng khóa ký cục bộ; không dùng để phát hành Play Store.

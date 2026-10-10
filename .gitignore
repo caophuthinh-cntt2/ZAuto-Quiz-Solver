@@ -1,0 +1,14 @@
+# Android build files
+build/
+*.apk
+*.jks
+
+# Python environment
+.venv/
+__pycache__/
+
+# IDE/System files
+.idea/
+.vscode/
+.DS_Store
+*.zip
