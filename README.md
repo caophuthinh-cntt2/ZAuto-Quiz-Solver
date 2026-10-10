@@ -5,6 +5,11 @@ ZAuto is an automated, AI-driven tool designed to instantly solve multiple-choic
 This repository contains two main components:
 1. **ZAuto Android App:** A native Android application that provides a convenient floating button overlay. It allows you to capture the screen and get answers directly on your phone without leaving your quiz app.
 2. **Python Desktop Script (`quiz_solver.py`):** A lightweight script that connects to your Android device via ADB (USB or Wi-Fi). It acts as a remote trigger to capture the screen and solve questions directly from your PC.
+<img width="1080" height="2400" alt="Screenshot_2026-10-10-12-03-36-534_vn zauto" src="https://github.com/user-attachments/assets/28cec33c-cbef-4e1e-b7e3-8e6c7fb314cd" />
+<img width="1080" height="2400" alt="Screenshot_2026-10-10-12-04-40-527_com android chrome" src="https://github.com/user-attachments/assets/efb53a0e-c22e-4f22-b662-8d022bc213a3" />
+<img width="1080" height="2400" alt="Screenshot_2026-10-10-12-05-13-432_com android chrome" src="https://github.com/user-attachments/assets/fe01b590-4a3f-4f92-b14b-f5979ab2df22" />
+
+🎁 Demo API Key: sk-xt-bcebf28cba8df1d732d97cb93a903809ffd1cb26e0c237ae
 
 ## ✨ Features
 
